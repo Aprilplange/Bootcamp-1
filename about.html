@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 10</title>
+ <style>
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: antiquewhite;
+    }
+
+    nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    z-index: 1100;
+    border-bottom: blue, solid, 2px;
+    
+}
+
+nav img{
+    width: 200px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links ul li a:hover{
+    color: #0000ff;
+    transition: 0.5s ;
+}
+
+.aboutus{
+    padding: auto;
+    border: brown solid 5px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    color: brown;
+    font-size: 35px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-top:50px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+
+.images {
+    margin: 30px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.models {
+    margin: 30px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+    font-size: 70px;
+}
+
+div {
+    border: 2px solid brown;
+}
+
+ </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Forms.html" target="_blank">LOGIN/SIGNUP</a></li>
+                <li><a href="contact.html" target="_blank">CONTACT</a></li>
+                
+            </ul>
+        </div>
+        </nav>
+        <br>
+    <section class="aboutus">
+        <h1>About Us</h1>
+        <p>You are at the right place!<br/><br>
+         April's Fashion Website provides you with all you need to boost your fashion sense.
+        We are just here to feed your eyes with fashion inspiration and advice!
+    <br><br>Stick and Stay!</p>
+    </section>
+
+    <section>
+       <br> <h1>Interior Designs</h1>
+     <div class="images">
+       
+        <img src="spacejoy-IH7wPsjwomc-unsplash.jpg" alt="">
+        <img src="spacejoy-YI2YkyaREHk-unsplash.jpg" alt="">
+        <img src="toa-heftiba-FV3GConVSss-unsplash (1).jpg" alt="">
+        <img src="don-kaveen-NFbwes_e-jI-unsplash.jpg" alt="">
+        <img src="alberto-castillo-q-mx4mSkK9zeo-unsplash.jpg" alt="">
+     </div>
+   </section>
+
+   <section>
+    <h1>Outfit Inspo</h1>
+     <div class="models">
+       
+        <img src="napat-saeng-mVGW8j9rrC4-unsplash.jpg" alt="">
+        <img src="oleg-ivanov-QhR78CbFPoE-unsplash.jpg" alt="">
+        <img src="dom-hill-nimElTcTNyY-unsplash.jpg" alt="">
+        <img src="alex-hddife-6wWiZlA2n0Q-unsplash.jpg" alt="">
+        <img src="toa-heftiba-FV3GConVSss-unsplash.jpg" alt="">
+        <img src="himanshu-dewangan-3vy8JquXGsA-unsplash.jpg" alt="">
+        
+     </div>
+   </section>
+</body>
+</html>
